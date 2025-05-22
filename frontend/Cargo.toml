@@ -1,0 +1,14 @@
+[package]
+name = "frontend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+web-sys = "0.3.77"
+yew = { version = "0.21.0", features = ["csr"] }
+yew-hooks = "0.3.3"
+
+common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
