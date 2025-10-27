@@ -1,10 +1,10 @@
 use common::ChatMessage;
 use yew::prelude::*;
 
-#[derive(Properties, PartialEq)]
-pub struct Props {
-    pub messages: Vec<ChatMessage>,
-}
+// #[derive(Properties, PartialEq)]
+// pub struct Props {
+//     pub messages: Vec<ChatMessage>,
+// }
 
 #[function_component(MesasgeList)]
 pub fn message_list(props: &Props) -> Html {
