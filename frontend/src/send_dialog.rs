@@ -1,13 +1,6 @@
 use web_sys::{HtmlInputElement, HtmlTextAreaElement};
 use yew::prelude::*;
 
-#[derive(Properties, PartialEq)]
-pub struct Props {
-    pub send_message_callback: Callback<String>,
-    pub change_username_callback: Callback<String>,
-    pub username: String,
-}
-
 #[function_component(SendDialog)]
 pub fn send_dialog(props: &Props) -> Html {
     let new_message_handle = use_state(String::default);
